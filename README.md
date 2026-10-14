@@ -40,8 +40,6 @@ mcp_servers:
 
 Without a plugin in a terminal: `claude mcp add --transport http nativeai-os https://os.nativeai.agency/api/mcp/mcp` or `codex mcp add nativeai-os --url https://os.nativeai.agency/api/mcp/mcp`.
 
-A client that cannot sign in with OAuth can send a personal token instead (`Authorization: Bearer <token>`), made on https://os.nativeai.agency/settings/connect.
-
 ## What stays with you
 
 Every change made through the plugin is recorded in NativeAI OS as you via the tool you used. Sending outreach email, approving, scheduling or publishing content, deleting projects, and creating or revoking access tokens are not available to an agent; they stay in the OS.
