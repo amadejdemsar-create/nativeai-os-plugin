@@ -1,6 +1,6 @@
 # NativeAI OS for Claude Code and Codex
 
-The `nativeai-os` plugin connects Claude Code or Codex to NativeAI OS (`https://os.nativeai.agency/api/mcp/mcp`), signed in as you with your NativeAI OS account, and adds four shortcuts: `my-day`, `company`, `replies` and `team-docs`.
+The `nativeai-os` plugin connects Claude Code or Codex to NativeAI OS (`https://os.nativeai.agency/api/mcp/mcp`), signed in as you with your NativeAI OS account, and adds five shortcuts: `my-day`, `company`, `replies`, `team-docs` and `sales`.
 
 ## Claude Code
 
@@ -11,7 +11,7 @@ claude plugin marketplace add amadejdemsar-create/nativeai-os-plugin
 claude plugin install nativeai-os@nativeai
 ```
 
-Then run `/mcp` in Claude Code, pick `plugin:nativeai-os:nativeai-os` and sign in. Only people with a NativeAI OS account can sign in; the plugin holds no credentials. The shortcuts are `/nativeai-os:my-day`, `/nativeai-os:company`, `/nativeai-os:replies` and `/nativeai-os:team-docs`.
+Then run `/mcp` in Claude Code, pick `plugin:nativeai-os:nativeai-os` and sign in. Only people with a NativeAI OS account can sign in; the plugin holds no credentials. The shortcuts are `/nativeai-os:my-day`, `/nativeai-os:company`, `/nativeai-os:replies`, `/nativeai-os:team-docs` and `/nativeai-os:sales`.
 
 If NativeAI OS is already connected in Claude Code (`claude mcp add`) or on claude.ai with the same Claude account, Claude Code keeps that connection and skips the plugin's copy of the same server; the plugin then only adds the shortcuts.
 
@@ -23,7 +23,7 @@ codex plugin add nativeai-os@nativeai
 codex mcp login nativeai-os
 ```
 
-The same skills and the same NativeAI OS server load in the Codex CLI, the IDE extension and the ChatGPT desktop app. The plugin list shows only the four skills; every NativeAI OS tool comes from the server once you are signed in, and Codex loads them when it needs them.
+The same skills and the same NativeAI OS server load in the Codex CLI, the IDE extension and the ChatGPT desktop app. The plugin list shows only the five skills; every NativeAI OS tool comes from the server once you are signed in, and Codex loads them when it needs them.
 
 ## Agents without plugins
 
