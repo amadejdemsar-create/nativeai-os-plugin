@@ -1,0 +1,8 @@
+{
+  "name": "nativeai-os",
+  "version": "1.0.0",
+  "description": "Connects Claude Code to NativeAI OS (os.nativeai.agency) as you, with four shortcuts: my-day, company, replies and team-docs.",
+  "author": { "name": "NativeAI" },
+  "homepage": "https://os.nativeai.agency/settings/connect",
+  "repository": "https://github.com/amadejdemsar-create/nativeai-os-plugin"
+}

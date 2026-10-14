@@ -1,0 +1,12 @@
+{
+  "name": "nativeai",
+  "description": "NativeAI's Claude Code plugins",
+  "owner": { "name": "NativeAI" },
+  "plugins": [
+    {
+      "name": "nativeai-os",
+      "source": "./plugins/nativeai-os",
+      "description": "NativeAI OS in Claude Code: your day, how the company is doing, replies to sort and the team docs, signed in as you"
+    }
+  ]
+}

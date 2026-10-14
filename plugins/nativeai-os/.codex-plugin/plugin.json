@@ -1,0 +1,29 @@
+{
+  "name": "nativeai-os",
+  "version": "1.0.0",
+  "description": "NativeAI OS (os.nativeai.agency) signed in as you, with my-day, company, replies and team-docs.",
+  "author": {
+    "name": "NativeAI",
+    "url": "https://os.nativeai.agency"
+  },
+  "homepage": "https://os.nativeai.agency/settings/connect",
+  "repository": "https://github.com/amadejdemsar-create/nativeai-os-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "NativeAI OS",
+    "shortDescription": "Your day, the company, replies and team docs from NativeAI OS",
+    "longDescription": "Connects to NativeAI OS as you (sign in with your OS account). Every change is recorded as you via Codex. Sending outreach email, approving or publishing content and deleting projects stay with you in the OS.",
+    "developerName": "NativeAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://os.nativeai.agency",
+    "defaultPrompt": [
+      "Use NativeAI OS to tell me what needs me today.",
+      "Use NativeAI OS to tell me how the company is doing."
+    ]
+  }
+}
