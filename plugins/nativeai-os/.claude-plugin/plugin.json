@@ -1,6 +1,6 @@
 {
   "name": "nativeai-os",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Connects Claude Code to NativeAI OS (os.nativeai.agency) as you, with seven shortcuts: my-day, company, replies, team-docs, sales, team-work (tasks and time) and team-expenses (shared costs and repayments), both across NativeAI and Dropshipping when your accounts are linked.",
   "author": {
     "name": "NativeAI"
