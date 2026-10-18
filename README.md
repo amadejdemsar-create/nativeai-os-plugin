@@ -23,7 +23,7 @@ codex plugin add nativeai-os@nativeai
 codex mcp login nativeai-os
 ```
 
-The same skills and the same NativeAI OS server load in the Codex CLI, the IDE extension and the ChatGPT desktop app. The plugin list shows only the seven skills; every NativeAI OS tool comes from the server once you are signed in, and Codex loads them when it needs them.
+The same skills and the same NativeAI OS server load in the Codex CLI, the IDE extension and the ChatGPT desktop app. The plugin list shows only the seven skills; the NativeAI OS tools come from the server once you are signed in: the daily ones are listed, the rest are reached with `find_tools` and `call_tool` (see below).
 
 ## Agents without plugins
 
@@ -41,6 +41,10 @@ mcp_servers:
 Without a plugin in a terminal: `claude mcp add --transport http nativeai-os https://os.nativeai.agency/api/mcp/mcp` or `codex mcp add nativeai-os --url https://os.nativeai.agency/api/mcp/mcp`.
 
 ## What stays with you
+
+## How the tools are listed
+
+The server lists a small set of daily tools (today, company_health, my_tasks, get_task, create_task, update_task, complete_task, list_projects, get_project, list_users, pipeline_deals, crm_opportunity, workspaces, team_tasks, expenses, docs_tree, doc_read) plus three that reach the rest: `find_tools` searches every tool and returns its exact name and schema, `call_tool` runs it, `call_read_tool` runs only tools that never change data. The skills below name tools such as `expense_create` or `balances`; if one is not in your tool list, find it with `find_tools` and run it with `call_tool`. To have the whole list loaded instead, add `?tools=all` to the server address.
 
 Every change made through the plugin is recorded in NativeAI OS as you via the tool you used. Sending outreach email, approving, scheduling or publishing content, deleting projects, and creating or revoking access tokens are not available to an agent; they stay in the OS.
 
