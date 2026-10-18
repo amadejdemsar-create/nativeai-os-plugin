@@ -1,6 +1,6 @@
 # nativeai-os plugin
 
-Connects Claude Code or Codex to NativeAI OS at `https://os.nativeai.agency/api/mcp/mcp`, signed in as you, and adds five shortcuts: `my-day` (what needs you today), `company` (how the company is doing), `replies` (sort outreach replies), `team-docs` (find, read and edit team documents) and `sales` (the sales process and the course lessons behind it).
+Connects Claude Code or Codex to NativeAI OS at `https://os.nativeai.agency/api/mcp/mcp`, signed in as you, and adds seven shortcuts: `my-day` (what needs you today), `company` (how the company is doing), `replies` (sort outreach replies), `team-docs` (find, read and edit team documents), `sales` (the sales process and the course lessons behind it), `team-work` (tasks, assignments and logged time) and `team-expenses` (shared costs, balances and repayments).
 
 Install:
 

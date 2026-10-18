@@ -1,7 +1,7 @@
 {
   "name": "nativeai-os",
-  "version": "1.0.0",
-  "description": "NativeAI OS (os.nativeai.agency) signed in as you, with my-day, company, replies, team-docs and sales.",
+  "version": "1.1.0",
+  "description": "NativeAI OS (os.nativeai.agency) signed in as you, with my-day, company, replies, team-docs, sales, team-work and team-expenses.",
   "author": {
     "name": "NativeAI",
     "url": "https://os.nativeai.agency"
@@ -12,7 +12,7 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "NativeAI OS",
-    "shortDescription": "Your day, the company, replies, team docs and sales from NativeAI OS",
+    "shortDescription": "Your day, the company, replies, team docs, sales, team tasks and shared expenses from NativeAI OS",
     "longDescription": "Connects to NativeAI OS as you (sign in with your OS account). Every change is recorded as you via Codex. Sending outreach email, approving or publishing content and deleting projects stay with you in the OS.",
     "developerName": "NativeAI",
     "category": "Productivity",
@@ -23,7 +23,9 @@
     "websiteURL": "https://os.nativeai.agency",
     "defaultPrompt": [
       "Use NativeAI OS to tell me what needs me today.",
-      "Use NativeAI OS to tell me how the company is doing."
+      "Use NativeAI OS to tell me how the company is doing.",
+      "Use NativeAI OS to show my tasks across NativeAI and Dropshipping.",
+      "Use NativeAI OS to tell me what I owe, per business and across both."
     ]
   }
 }
