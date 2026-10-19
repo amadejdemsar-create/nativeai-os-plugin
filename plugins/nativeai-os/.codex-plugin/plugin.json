@@ -1,6 +1,6 @@
 {
   "name": "nativeai-os",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "NativeAI OS (os.nativeai.agency) signed in as you, with my-day, company, replies, team-docs, sales, team-work and team-expenses.",
   "author": {
     "name": "NativeAI",
@@ -9,7 +9,7 @@
   "homepage": "https://os.nativeai.agency/settings/connect",
   "repository": "https://github.com/amadejdemsar-create/nativeai-os-plugin",
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./.codex-mcp.json",
   "interface": {
     "displayName": "NativeAI OS",
     "shortDescription": "Your day, the company, replies, team docs, sales, team tasks and shared expenses from NativeAI OS",
