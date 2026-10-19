@@ -44,7 +44,7 @@ Without a plugin in a terminal: `claude mcp add --transport http nativeai-os htt
 
 ## How the tools are listed
 
-The server lists a small set of daily tools (today, company_health, my_tasks, get_task, create_task, update_task, complete_task, list_projects, get_project, list_users, pipeline_deals, crm_opportunity, workspaces, team_tasks, expenses, docs_tree, doc_read) plus three that reach the rest: `find_tools` searches every tool and returns its exact name and schema, `call_tool` runs it, `call_read_tool` runs only tools that never change data. The skills below name tools such as `expense_create` or `balances`; if one is not in your tool list, find it with `find_tools` and run it with `call_tool`. To have the whole list loaded instead, add `?tools=all` to the server address.
+The server lists a small set of daily tools (today, company_health, my_tasks, get_task, create_task, update_task, complete_task, list_projects, get_project, list_users, pipeline_deals, crm_opportunity, workspaces, team_tasks, expenses, docs_tree, doc_read) plus three that reach the rest: `find_tools` searches every tool and returns its exact name and schema, `call_tool` runs it, `call_read_tool` runs only tools that never change data. The skills below name tools such as `expense_create` or `balances`; if one is not in your tool list, find it with `find_tools` and run it with `call_tool`. The plugin asks for the whole list with the header `x-mcp-tools: all` (`.mcp.json` for Claude Code, `.codex-mcp.json` for Codex, whose key is `http_headers`), because Claude Code and Codex defer tools themselves and load only the ones they need; `find_tools` and `call_tool` still work. Another client that has no plugin can send the same header, or add `?tools=all` to the server address.
 
 Every change made through the plugin is recorded in NativeAI OS as you via the tool you used. Sending outreach email, approving, scheduling or publishing content, deleting projects, and creating or revoking access tokens are not available to an agent; they stay in the OS.
 
@@ -57,4 +57,4 @@ Differences between surfaces:
 - claude.ai and the Claude desktop app use a connector you add yourself (Settings, Connectors, the URL above); plugin skills installed in Claude Code do not travel there, and a local plugin install does not reach cloud sessions.
 - The skill text is the same in the Dropshipping OS plugin. Its single source is `skills/team/` in the dropshipping-os repository; `scripts/sync-team-skills.sh <dropshipping-os checkout> --check` fails when this copy drifts.
 
-Versions: 1.1.0 adds `team-work` and `team-expenses` and needs a NativeAI OS server with the shared team tools (protocol 1).
+Versions: 1.2.0 sends `x-mcp-tools: all` and gives Codex its own MCP file. 1.1.0 adds `team-work` and `team-expenses` and needs a NativeAI OS server with the shared team tools (protocol 1).

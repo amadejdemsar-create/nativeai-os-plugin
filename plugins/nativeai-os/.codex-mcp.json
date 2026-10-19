@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nativeai-os": {
+      "type": "http",
+      "url": "https://os.nativeai.agency/api/mcp/mcp",
+      "http_headers": {
+        "x-mcp-tools": "all"
+      }
+    }
+  }
+}
