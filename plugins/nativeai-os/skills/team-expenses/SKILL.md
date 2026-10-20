@@ -7,7 +7,7 @@ description: Shared team expenses and repayments across NativeAI and Dropshippin
 
 The tools come from NativeAI OS or Dropshipping OS (the same names in both): `workspaces`, `expenses`, `expense_get`, `expense_create`, `expense_update`, `expense_void`, `balances`, `settlements`, `settlement_record`, `settle_across`, `settlement_void`. They act as the signed-in person; every change is recorded as "<person> via <your tool>". Nothing here moves money: a repayment is a record of a payment that already happened.
 
-If a tool named here is not in your tool list, call find_tools with its name, then call_tool (or call_read_tool for reads) with the arguments it returns.
+If a tool named here is not in your tool list, call find_tools with its name, then run it with the runner its run_with names (call_read_tool, call_tool or call_careful_tool) and the arguments its input_schema describes.
 
 ## Rules that never bend
 
